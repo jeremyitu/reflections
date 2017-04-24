@@ -1,0 +1,3 @@
+Viewing a diff between two files made it easier to spot the differences by reducing the amount of data in the file to just the altered lines and surrounding lines.
+
+This focuses the attention just on the relevant lines and avoids the noise from potentially thousands of unchanged lines.
