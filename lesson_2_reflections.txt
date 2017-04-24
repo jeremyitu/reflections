@@ -1,0 +1,15 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+"git init" creates a .git folder for storage of repository status and change information
+This needs to be done in order for git to manage the files in the directory
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Working Directory is the active files ready for modification
+Staging area is a list of files cleared to be added to the repository
+Repository is the collection of completed code changes for current code activity or sharing
+
+Staging provides a stable code list for assurance the only intented files are added to the repository
+
+
