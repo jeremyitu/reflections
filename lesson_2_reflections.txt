@@ -13,3 +13,65 @@ Repository is the collection of completed code changes for current code activity
 Staging provides a stable code list for assurance the only intented files are added to the repository
 
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+"git diff" - will compare working directory to staging area
+"git diff --staging" - will compare staging area to latest commit in working directory
+"git diff [Commit ID earlier] [Commit ID later]" - compare all changes between two commits
+
+"git status" - check status of current working copy
+"git log"
+"git commit"
+
+"git status"
+notepad++ <FILENAME>
+"git add <FILENAME>"
+"git diff"
+"git diff --staged"
+"git commit"
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches help with seperation of code for different versions or experimentation. Also for major changes that may still require the persistence of previous version such as major release where not all end users will change at the same time and the existing version will require further modifications.
+
+
+Branches 
+
+Branch Feature/ Branch bug-fix/ Branch Master
+	Branch coins set up to track remote branch coins from origin
+	
+	git log - show current branch changes
+	checkout
+	git log - show log for hew checked out
+	
+	git log --graph --oneline <BRANCH 1> <BRANCH 2>
+		git log --graph --oneline master coins
+
+	IF you:
+		"git checkout <CHECKOUT ID>"
+			you have a checkout that has no BranchName - changes will be abandoned if you checkout a Branch without commit.
+		"git checkout -b <NEW BRANCH NAME>" - will create a new branch name at the current change location
+			like running:
+				"git branch new_branch_name"
+				"git checkout new_branch_name"
+				
+	"git show <COMMIT ID>" - show diff with commit and parent commit, good for merged code lines where parent id is not really known due to flattened commit structure. 
+	
+	Git merge can merge multiple branches with your current branch or explicitely list all branches to merge
+	"git merge <BRANCH 1> <BRANCH 2>"
+	
+	"git branch -d <BRANCH NAME>" - delete branch name, best after merged
+	
+				
+How do the diagrams help you visualize the branch structure?
+
+Branch diagrams provide a visualization of where branches happen and show the link path back to origin
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+manual merges will be more precise, but take a lot longer and when no obvious potential conflict exists, the manual process is a longer process with potential to corrupt the changes that the computer can do quickly without typos.
