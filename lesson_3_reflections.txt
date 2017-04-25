@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+For off-site backup, to share on multiple machines, to work with others, to share with others.
+
+
